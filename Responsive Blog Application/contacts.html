@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Contact Us - iBlog</title>
+    <script src="js/contacts.js" defer></script>
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span>iBlog</span>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/contacts">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <input type="text" placeholder="Article Search">
+            <button class="btn">Search</button>
+        </div>
+    </nav>
+    
+    <div class="content max-width-1 m-auto">
+        <h1>Feel Free to Contact Us</h1>
+        <br>
+        <form action="/submit_contact_form" method="POST" class="contact-form">
+            <br>
+            <div class="form-group">
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Enter Your Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Enter Your Email Id</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Id" required>
+            </div>
+            <div class="form-group">
+                <label for="message">How may we help you?</label>
+                <textarea id="message" name="message" placeholder="How may we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    
+    <div class="footer max-width-2 m-auto">
+        <p>Copyright &copy; iBlog.com</p>
+        <a href="https://www.vecteezy.com/freevector/typewriter">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+</html>
